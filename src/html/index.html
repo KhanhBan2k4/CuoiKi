@@ -1,0 +1,3135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/bootstrap/bootstrap.min.css">
+    <script src="/public/jquery/jquery.min.js"></script>
+    <script src="/public/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/public/fa-icon/css/all.min.css">
+    <script src="/public/fa-icon/js/all.min.js"></script>
+    <title>K BLANC</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black ps-sticky">
+            <a class="navbar-brand" href="#">
+                <img src="/public/img/logo.png" width="50px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/index.html">TRANG CHỦ<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/review.html">REVIEWS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SẢN PHẨM
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#sanPhamNoiBat">Sản phẩm nổi bật</a>
+                            <a class="dropdown-item" href="#designer-nam">Nước hoa nam</a>
+                            <a class="dropdown-item" href="#designer-nu">Nước hoa nữ</a>
+                            <a class="dropdown-item" href="#mini">Nước hoa mini</a>
+                            <a class="dropdown-item" href="#son">Son</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit">Search</button>
+                    <button type="button" class="btn btn-light btn-outline-success m-2" data-toggle="modal" data-target="#login" id="userLogin">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <a href="../html/shopping.html" class="link">
+                        <button type="button" class="btn btn-light btn-outline-success" id="shoppingCartBtn">
+                            <i class="fa-solid fa-cart-shopping"></i><span class="badge badge-success" id="countShopping">0</span>
+                        </button>
+                    </a>
+                </form>
+            </div>
+        </nav>
+
+        <img src="/public/img/section1.jpg" class="img-thumbnail p-0" alt="Cinque Terre">
+
+        <div class="container p-0" id="sanPhamNoiBat">
+            <div class="container pt-5 d-flex">
+                <div class="font-weight-bold font-40">SẢN PHẨM NỔI BẬT</div>
+                <i class="fa-solid fa-caret-right font-30 ml-auto mt-auto mb-auto"></i>
+                <a href="#" class="mr-2 mt-auto mb-auto font-17 text-dark font-weight-bold ml-2">Xem thêm</a>
+            </div>
+
+            <table class="table table-borderless">
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/nb1-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Mercedes Benz Club Black Men EDT</h5>
+                                <p class="card-text">1.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/montblanc-explorer-platinum-edp.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Montblanc Explorer Platinum EDP</h5>
+                                <p class="card-text">2.150.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB2" id="addSp2">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB2" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB2">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Giorgio-Armani-Acqua-di-Gio-Pour-Homme-Parfum.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Giorgio Armani Acqua di Gio Pour Homme Parfum</h5>
+                                <p class="card-text">3.550.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB3" id="addSp3">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB3" id="buyNB3">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Giorgio-Armani-Armani-Code-Parfum.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Giorgio Armani Armani Code Parfum</h5>
+                                <p class="card-text">3.050.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB4" id="addSp4">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB4" id="buyNB4">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Lattafa-Maahir-Legacy-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Lattafa Maahir Legacy EDP</h5>
+                                <p class="card-text">795.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB5" id="addSp5">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB5" id="buyNB5">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/GWP-Tui-Prada-Toiletry-Bag(20x14x11).jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">GWP Túi Prada Toiletry Bag(20x14x11)</h5>
+                                <p class="card-text">1.950.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB6" id="addSp6">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB6" id="buyNB6">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Prada-Luna-Rossa-Black-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Prada Luna Rossa Black EDP</h5>
+                                <p class="card-text">1.950.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB7" id="addSp7">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB7" id="buyNB7">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Prada-Luna-Ocean-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Prada Luna Ocean EDT</h5> <br>
+                                <p class="card-text">6.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB8" id="addSp8">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB8" id="buyNB8">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Creed-Virgin-Island-Water-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Creed Virgin Island Water EDP</h5>
+                                <p class="card-text">1.990.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB9" id="addSp9">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB9" id="buyNB9">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Givenchy-Gentleman-Reserve-Privee-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Givenchy Gentleman Reserve Privee EDP</h5>
+                                <p class="card-text">2.880.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB10" id="addSp10">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB10" id="buyNB10">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Hermes-Terre-d'Hermes-Eau-Givree-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Hermes Terre d'Hermes Eau Givree EDP</h5>
+                                <p class="card-text">2.250.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#getNB11" id="addSp11">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB11" id="buyNB11">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Azzaro-The-Most-Wanted-For-Men-EDP-Intense.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Azzaro The Most Wanted For Men EDP Intense</h5>
+                                <p class="card-text">2.550.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success"  data-toggle="modal" data-target="#addNB12" id="addSp12">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB12" id="buyNB12">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" height="245px" src="/public/img/Mancera-Cedrat-Boise-Intense-Extrait-De-Parfum.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Mancera Cedrat Boise Intense Extrait De Parfum</h5>
+                                <p class="card-text">950.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB13" id="addSp13">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB13" id="buyNB13">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Salvatore-Ferragamo-F-By-Black-Men-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Salvatore Ferragamo F By Black Men EDT</h5>
+                                <p class="card-text">990.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB14" id="addSp14">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB14" id="buyNB14">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Reyane-Tradition-R2B2-A.I.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Reyane Tradition R2B2 A.I</h5>
+                                <p class="card-text">2.250.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB15" id="addSp15">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB15" id="buyNB15">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Memo-Wnter-Palace-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Memo Winter Palace EDP</h5> <br>
+                                <p class="card-text">4.650.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success"  data-toggle="modal" data-target="#addNB16" id="addSp16">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB16" id="buyNB16">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container p-0" id="designer-nam">
+            <div class="container pt-5 d-flex">
+                <div class="font-weight-bold font-40">NƯỚC HOA NAM</div>
+                <i class="fa-solid fa-caret-right font-30 ml-auto mt-auto mb-auto"></i>
+                <a href="#" class="mr-2 mt-auto mb-auto font-17 text-dark font-weight-bold ml-2">Xem thêm</a>
+            </div>
+
+            <table class="table table-borderless">
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Salvatore-Ferragamo-Uomo-Signature-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Salvatore Ferragamo Uomo Signature EDP</h5>
+                                <p class="card-text">1.450.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan1" id="addSp17">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan1" id="buyMan1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Giorgio-Armani-Acqua-di-Gio-Pour-Homme-Parfum.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Giorgio Armani Acqua di Gio Pour Homme Parfum</h5>
+                                <p class="card-text">3.550.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan2" id="addSp18">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan2" id="buyMan2">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Hermes-Terre-d'Hermes-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">GHermes Terre d'Hermes EDT</h5>
+                                <p class="card-text">2.650.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan3" id="addSp19">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan3" id="buyMan3">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Jean-Paul-Gaultier-Ultra-Male-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Jean-Paul-Gaultier-Ultra-Male-EDT</h5>
+                                <p class="card-text">3.550.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan4" id="addSp20">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan4" id="buyMan4">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Versace-Eros-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Versace Eros EDT</h5> <br>
+                                <p class="card-text">2.400.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan5" id="addSp21">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan5" id="buyMan5">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Moschino-Toy-Boy-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Moschino Toy Boy EDP</h5> <br>
+                                <p class="card-text">1.700.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan6" id="addSp22">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan6" id="buyMan6">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Versace-Dylan-Blue-Pour-Homme-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Versace Dylan Blue Pour Homme EDT</h5>
+                                <p class="card-text">2.300.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan7" id="addSp23">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan7" id="buyMan7">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/YSL-Y-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">YSL Y EDP</h5> <br>
+                                <p class="card-text">5.900.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan8" id="addSp24">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan8" id="buyMan8">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/YSL-Y-Le-Parfum.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">YSL Y Le Parfum</h5> <br>
+                                <p class="card-text">3.700.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan9" id="addSp25">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan9" id="buyMan9">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Dior-Sauvage-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Dior Sauvage EDP</h5> <br>
+                                <p class="card-text">5.500.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan10" id="addSp26">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan10" id="buyMan10">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Giorgio-Armani-Acqua-di-Gio-Profondo-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Giorgio Armani Acqua di Gio Profondo EDP</h5>
+                                <p class="card-text">3.990.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addMan11" id="addSp27">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getMan11" id="buyMan11">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container p-0" id="designer-nu">
+            <div class="container pt-5 d-flex">
+                <div class="font-weight-bold font-40">NƯỚC HOA NỮ</div>
+                <i class="fa-solid fa-caret-right font-30 ml-auto mt-auto mb-auto"></i>
+                <a href="#" class="mr-2 mt-auto mb-auto font-17 text-dark font-weight-bold ml-2">Xem thêm</a>
+            </div>
+
+            <table class="table table-borderless">
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Narciso-Rodriguez-Narciso-Poudree-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez Narciso Poudree EDP</h5>
+                                <p class="card-text">3.350.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm1" id="addSp28">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm1" id="buyWm1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Thierry-Mugler-Alien-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Thierry Mugler Alien EDP</h5> <br>
+                                <p class="card-text">2.250.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm2" id="addSp29">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm2" id="buyWm2">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/AI-Haramain-Amber-Oud-Ruby-(Baccarat-540).jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">AI Haramain Amber Oud Ruby (Baccarat 540)</h5>
+                                <p class="card-text">2.350.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm3" id="addSp30">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm3" id="buyWm3">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Armaf-Club-De-Nuit-Women-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Armaf Club De Nuit Women EDP</h5>
+                                <p class="card-text">890.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm4" id="addSp31">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm4" id="buyWm4">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Narciso-Rodriguez-Cristal-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez Cristal EDP</h5>
+                                <p class="card-text">2.690.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm5" id="addSp32">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm5" id="buyWm5">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Narciso-Rodriguez-Narciso-Pure-Musc-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez Narciso Pure Musc EDP</h5>
+                                <p class="card-text">3.550.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm6" id="addSp3">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm6" id="buyWm6">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Karl-Lagerfeld-De-Pecher-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Karl Lagerfeld De Pecher EDP</h5>
+                                <p class="card-text">1.170.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm7" id="addSp34">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm7" id="buyWm7">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Karl-Lagerfeld-De-Murier-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Karl Lagerfeld De Murier EDP</h5>
+                                <p class="card-text">1.170.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm8" id="addSp35">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm8" id="buyWm8">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Chanel-Coco-Mademoiselle-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Chanel Coco Mademoiselle EDP</h5>
+                                <p class="card-text">6.800.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm9" id="addSp36">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm9" id="buyWm9">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Lancome-La-Vie-Est-Belle-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Lancome La Vie Est Belle EDP</h5>
+                                <p class="card-text">2.950.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm10" id="addSp37">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm10" id="buyWm10">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Jean-Paul-Gaultier-Scandal-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Jean Paul Gaultier Scandal EDP</h5>
+                                <p class="card-text">3.250.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addWm11" id="addSp38">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getWm11" id="buyWm11">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container p-0" id="mini">
+            <div class="container pt-5 d-flex">
+                <div class="font-weight-bold font-40">NƯỚC HOA MINI</div>
+                <i class="fa-solid fa-caret-right font-30 ml-auto mt-auto mb-auto"></i>
+                <a href="#" class="mr-2 mt-auto mb-auto font-17 text-dark font-weight-bold ml-2">Xem thêm</a>
+            </div>
+
+            <table class="table table-borderless">
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" height="270px" src="/public/img/Azzaro-The-Most-Wanted-For-Men-EDP-Intense-MINI-5ml.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Azzaro The Most Wanted For Men EDP Intense MINI 5ml</h5>
+                                <p class="card-text">195.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Marc-Jacobs-Daisy-EDT-MINI-4ml.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Marc Jacobs Daisy EDT MINI 4ml</h5> <br>
+                                <p class="card-text">209.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Mac-Jacobs-Perfect-EDP-MINI-5ml.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Mac Jacobs Perfect EDP MINI 5ml</h5> <br>
+                                <p class="card-text">250.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Marc-Jacobs-Daisy-EDT-MINI-4ml.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Marc Jacobs Daisy EDT MINI 4ml</h5> <br>
+                                <p class="card-text">190.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Marc-Jacobs-Daisy-Eau-so-Fresh-EDT-MINI-4ml.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Marc Jacobs Daisy Eau so Fresh EDT MINI 4ml</h5> <br>
+                                <p class="card-text">190.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Gucci-Flora-Gorgeous-Magnolia-EDP-5ml-MINI.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Gucci Flora Gorgeous Magnolia EDP 5ml MINI</h5> <br>
+                                <p class="card-text">350.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Salvatore-Ferragamo-Signoria-Libera-EDP-Mini-5ml.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Salvatore Ferragamo Signoria Libera EDP Mini 5ml</h5>
+                                <p class="card-text">197.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/Salvatore-Ferragamo-Ferragamo-EDT-Mini-5ml.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Salvatore Ferragamo Ferragamo EDT Mini 5ml</h5> <br>
+                                <p class="card-text">185.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container p-0" id="son">
+            <div class="container pt-5 d-flex">
+                <div class="font-weight-bold font-40">SON</div>
+                <i class="fa-solid fa-caret-right font-30 ml-auto mt-auto mb-auto"></i>
+                <a href="#" class="mr-2 mt-auto mb-auto font-17 text-dark font-weight-bold ml-2">Xem thêm</a>
+            </div>
+
+            <table class="table table-borderless">
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/SON-3CE-Soft-Matte-Lipstick - Giving-Pleasure.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">SON 3CE Soft Matte Lipstick - Giving Pleasure</h5>
+                                <p class="card-text">1.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/SON-3CE-Soft-Matte-Lipstick - Smoke-Pink.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">SON 3CE Soft Matte Lipstick - Smoke Pink</h5> <br>
+                                <p class="card-text">1.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/SON-3CE-Soft-Matte-Lipstick - Holy-Chic.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">SON 3CE Soft Matte Lipstick - Holy Chic</h5> <br>
+                                <p class="card-text">1.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" height="290px" src="/public/img/SON-3CE-Soft-Matte-Lipstick - Focus-On-Me.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">SON 3CE Soft Matte Lipstick - Focus On Me</h5>
+                                <p class="card-text">1.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" src="/public/img/SON-3CE-Soft-Matte-Lipstick - Speak-To-Me.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">SON 3CE Soft Matte Lipstick - Speak To Me</h5>
+                                <p class="card-text">1.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" height="272px" src="/public/img/SON-3CE-Red-Recipe-Lip-Color-Mini-Kit.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">SON 3CE Red Recipe Lip Color Mini Kit</h5>
+                                <p class="card-text">1.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" height="250px" src="/public/img/Son-Kem-Li-MAC-Powder-Kiss-Liquid-998-Sorry-Not-Sorry.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Son Kem Lì MAC Powder Kiss Liquid 998 Sorry Not Sorry</h5>
+                                <p class="card-text">1.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card hover" style="width: 17rem;">
+                            <img class="card-img-top" height="250px" src="/public/img/Lancome-L'absolu-Rouge-175-Obsessive-Red-Drama-Matte.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Lancome L'absolu Rouge 175 Obsessive Red Drama Matte</h5>
+                                <p class="card-text">1.850.000 <u>đ</u></p>
+                                <button type="button" class="btn btn-light btn-outline-success" data-toggle="modal" data-target="#addNB1" id="addSp1">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <button type="button" id="buyNB1" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <a href="#" class="nav-link">
+        <i class="fa-solid fa-caret-up bg-secondary" id="toTop"></i>
+    </a>
+
+    <!-- Modal -->
+    <!-- NB -->
+    <div class="modal fade mt-5" id="getNB1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/nb1-1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes Benz Club Black Men EDT</h5>
+                            <p class="card-text">1.850.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/montblanc-explorer-platinum-edp.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Montblanc Explorer Platinum EDP</h5>
+                            <p class="card-text">2.150.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Giorgio-Armani-Acqua-di-Gio-Pour-Homme-Parfum.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Giorgio Armani Acqua di Gio Pour Homme Parfum</h5>
+                            <p class="card-text">3.550.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Giorgio-Armani-Armani-Code-Parfum.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Giorgio Armani Armani Code Parfum</h5>
+                            <p class="card-text">3.050.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Lattafa-Maahir-Legacy-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Lattafa Maahir Legacy EDP</h5>
+                            <p class="card-text">795.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/GWP-Tui-Prada-Toiletry-Bag(20x14x11).jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">GWP Túi Prada Toiletry Bag(20x14x11)</h5>
+                            <p class="card-text">1.950.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Prada-Luna-Rossa-Black-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Prada Luna Rossa Black EDP</h5>
+                            <p class="card-text">1.950.000<u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Prada-Luna-Ocean-EDT.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Prada Luna Ocean EDT</h5> <br>
+                            <p class="card-text">6.850.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Creed-Virgin-Island-Water-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Creed Virgin Island Water EDP</h5>
+                            <p class="card-text">1.990.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Givenchy-Gentleman-Reserve-Privee-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Givenchy Gentleman Reserve Privee EDP</h5>
+                            <p class="card-text">2.880.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Hermes-Terre-d'Hermes-Eau-Givree-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Hermes Terre d'Hermes Eau Givree EDP</h5>
+                            <p class="card-text">2.250.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Azzaro-The-Most-Wanted-For-Men-EDP-Intense.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Azzaro The Most Wanted For Men EDP Intense</h5>
+                            <p class="card-text">2.550.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB13" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Mancera-Cedrat-Boise-Intense-Extrait-De-Parfum.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Mancera Cedrat Boise Intense Extrait De Parfum</h5>
+                            <p class="card-text">950.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB14" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Salvatore-Ferragamo-F-By-Black-Men-EDT.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Salvatore Ferragamo F By Black Men EDT</h5>
+                            <p class="card-text">990.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB15" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Reyane-Tradition-R2B2-A.I.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Reyane Tradition R2B2 A.I</h5>
+                            <p class="card-text">2.250.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getNB16" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Memo-Wnter-Palace-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Memo Winter Palace EDP</h5>
+                            <p class="card-text">4.650.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- man -->
+
+    <div class="modal fade mt-5" id="getMan1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Salvatore-Ferragamo-Uomo-Signature-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Salvatore Ferragamo Uomo Signature EDP</h5>
+                                <p class="card-text">1.450.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Giorgio-Armani-Acqua-di-Gio-Pour-Homme-Parfum.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Giorgio Armani Acqua di Gio Pour Homme Parfum</h5>
+                                <p class="card-text">3.550.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Hermes-Terre-d'Hermes-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">GHermes Terre d'Hermes EDT</h5>
+                                <p class="card-text">2.650.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Jean-Paul-Gaultier-Ultra-Male-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Jean-Paul-Gaultier-Ultra-Male-EDT</h5>
+                                <p class="card-text">3.550.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Versace-Eros-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Versace Eros EDT</h5> <br>
+                                <p class="card-text">2.400.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Moschino-Toy-Boy-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Moschino Toy Boy EDP</h5> <br>
+                                <p class="card-text">1.700.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Versace-Dylan-Blue-Pour-Homme-EDT.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Versace Dylan Blue Pour Homme EDT</h5>
+                                <p class="card-text">2.300.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/YSL-Y-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">YSL Y EDP</h5> <br>
+                                <p class="card-text">5.900.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/YSL-Y-Le-Parfum.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">YSL Y Le Parfum</h5> <br>
+                                <p class="card-text">3.700.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Dior-Sauvage-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Dior Sauvage EDP</h5> <br>
+                                <p class="card-text">5.500.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getMan11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Giorgio-Armani-Acqua-di-Gio-Profondo-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Giorgio Armani Acqua di Gio Profondo EDP</h5>
+                                <p class="card-text">3.990.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- girl -->
+
+    <div class="modal fade mt-5" id="getWm1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Narciso-Rodriguez-Narciso-Poudree-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez Narciso Poudree EDP</h5>
+                                <p class="card-text">3.350.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Thierry-Mugler-Alien-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Thierry Mugler Alien EDP</h5> <br>
+                                <p class="card-text">2.250.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/AI-Haramain-Amber-Oud-Ruby-(Baccarat-540).jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">AI Haramain Amber Oud Ruby (Baccarat 540)</h5>
+                                <p class="card-text">2.350.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Armaf-Club-De-Nuit-Women-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Armaf Club De Nuit Women EDP</h5>
+                            <p class="card-text">890.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Narciso-Rodriguez-Cristal-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez Cristal EDP</h5>
+                                <p class="card-text">2.690.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Narciso-Rodriguez-Narciso-Pure-Musc-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez Narciso Pure Musc EDP</h5>
+                                <p class="card-text">3.550.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Karl-Lagerfeld-De-Pecher-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Karl Lagerfeld De Pecher EDP</h5>
+                                <p class="card-text">1.170.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Karl-Lagerfeld-De-Murier-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Karl Lagerfeld De Murier EDP</h5>
+                                <p class="card-text">1.170.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Chanel-Coco-Mademoiselle-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Chanel Coco Mademoiselle EDP</h5>
+                                <p class="card-text">6.800.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Lancome-La-Vie-Est-Belle-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Lancome La Vie Est Belle EDP</h5>
+                                <p class="card-text">2.950.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="getWm11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thanh toán</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Jean-Paul-Gaultier-Scandal-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Jean Paul Gaultier Scandal EDP</h5>
+                                <p class="card-text">3.250.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thanh toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add shopping -->
+
+    <div class="modal fade mt-5" id="addNB1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/nb1-1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes Benz Club Black Men EDT</h5>
+                            <p class="card-text">1.850.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/montblanc-explorer-platinum-edp.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Montblanc Explorer Platinum EDP</h5>
+                            <p class="card-text">2.150.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Giorgio-Armani-Acqua-di-Gio-Pour-Homme-Parfum.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Giorgio Armani Acqua di Gio Pour Homme Parfum</h5>
+                            <p class="card-text">3.550.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Giorgio-Armani-Armani-Code-Parfum.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Giorgio Armani Armani Code Parfum</h5>
+                            <p class="card-text">3.050.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Lattafa-Maahir-Legacy-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Lattafa Maahir Legacy EDP</h5>
+                            <p class="card-text">795.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/GWP-Tui-Prada-Toiletry-Bag(20x14x11).jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">GWP Túi Prada Toiletry Bag(20x14x11)</h5>
+                            <p class="card-text">1.950.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Prada-Luna-Rossa-Black-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Prada Luna Rossa Black EDP</h5>
+                            <p class="card-text">1.950.000<u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Prada-Luna-Ocean-EDT.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Prada Luna Ocean EDT</h5> <br>
+                            <p class="card-text">6.850.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Creed-Virgin-Island-Water-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Creed Virgin Island Water EDP</h5>
+                            <p class="card-text">1.990.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Givenchy-Gentleman-Reserve-Privee-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Givenchy Gentleman Reserve Privee EDP</h5>
+                            <p class="card-text">2.880.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Hermes-Terre-d'Hermes-Eau-Givree-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Hermes Terre d'Hermes Eau Givree EDP</h5>
+                            <p class="card-text">2.250.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Azzaro-The-Most-Wanted-For-Men-EDP-Intense.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Azzaro The Most Wanted For Men EDP Intense</h5>
+                            <p class="card-text">2.550.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB13" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Mancera-Cedrat-Boise-Intense-Extrait-De-Parfum.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Mancera Cedrat Boise Intense Extrait De Parfum</h5>
+                            <p class="card-text">950.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB14" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Salvatore-Ferragamo-F-By-Black-Men-EDT.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Salvatore Ferragamo F By Black Men EDT</h5>
+                            <p class="card-text">990.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB15" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Reyane-Tradition-R2B2-A.I.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Reyane Tradition R2B2 A.I</h5>
+                            <p class="card-text">2.250.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addNB16" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Memo-Wnter-Palace-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Memo Winter Palace EDP</h5>
+                            <p class="card-text">4.650.000 <u>đ</u></p>
+                            <button type="button" class="btn btn-light btn-outline-success">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-light btn-outline-success ml-2" data-toggle="modal" data-target="#getNB16" id="buyNB16">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- man -->
+
+    <div class="modal fade mt-5" id="addMan1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Salvatore-Ferragamo-Uomo-Signature-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Salvatore Ferragamo Uomo Signature EDP</h5>
+                            <p class="card-text">1.450.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Giorgio-Armani-Acqua-di-Gio-Pour-Homme-Parfum.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Giorgio Armani Acqua di Gio Pour Homme Parfum</h5>
+                            <p class="card-text">3.550.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Hermes-Terre-d'Hermes-EDT.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">GHermes Terre d'Hermes EDT</h5>
+                            <p class="card-text">2.650.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Jean-Paul-Gaultier-Ultra-Male-EDT.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Jean-Paul-Gaultier-Ultra-Male-EDT</h5>
+                            <p class="card-text">3.550.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Versace-Eros-EDT.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Versace Eros EDT</h5> <br>
+                            <p class="card-text">2.400.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Moschino-Toy-Boy-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Moschino Toy Boy EDP</h5> <br>
+                            <p class="card-text">1.700.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Versace-Dylan-Blue-Pour-Homme-EDT.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Versace Dylan Blue Pour Homme EDT</h5>
+                            <p class="card-text">2.300.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/YSL-Y-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">YSL Y EDP</h5> <br>
+                            <p class="card-text">5.900.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/YSL-Y-Le-Parfum.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">YSL Y Le Parfum</h5> <br>
+                            <p class="card-text">3.700.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Dior-Sauvage-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Dior Sauvage EDP</h5> <br>
+                            <p class="card-text">5.500.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addMan11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Giorgio-Armani-Acqua-di-Gio-Profondo-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Giorgio Armani Acqua di Gio Profondo EDP</h5>
+                            <p class="card-text">3.990.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- girl -->
+
+    <div class="modal fade mt-5" id="addWm1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Narciso-Rodriguez-Narciso-Poudree-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Narciso Rodriguez Narciso Poudree EDP</h5>
+                            <p class="card-text">3.350.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Thierry-Mugler-Alien-EDP.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Thierry Mugler Alien EDP</h5> <br>
+                            <p class="card-text">2.250.000 <u>đ</u></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/AI-Haramain-Amber-Oud-Ruby-(Baccarat-540).jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">AI Haramain Amber Oud Ruby (Baccarat 540)</h5>
+                                <p class="card-text">2.350.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Armaf-Club-De-Nuit-Women-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Armaf Club De Nuit Women EDP</h5>
+                                <p class="card-text">890.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Narciso-Rodriguez-Cristal-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez Cristal EDP</h5>
+                                <p class="card-text">2.690.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Narciso-Rodriguez-Narciso-Pure-Musc-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Narciso Rodriguez Narciso Pure Musc EDP</h5>
+                                <p class="card-text">3.550.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Karl-Lagerfeld-De-Pecher-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Karl Lagerfeld De Pecher EDP</h5>
+                                <p class="card-text">1.170.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Karl-Lagerfeld-De-Murier-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Karl Lagerfeld De Murier EDP</h5>
+                                <p class="card-text">1.170.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm9" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Chanel-Coco-Mademoiselle-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Chanel Coco Mademoiselle EDP</h5>
+                                <p class="card-text">6.800.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm10" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Lancome-La-Vie-Est-Belle-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Lancome La Vie Est Belle EDP</h5>
+                                <p class="card-text">2.950.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="addWm11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleProduct">Thêm vào giỏ hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card hover rounded mx-auto d-block" style="width: 17rem;">
+                        <img class="card-img-top" src="/public/img/Jean-Paul-Gaultier-Scandal-EDP.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Jean Paul Gaultier Scandal EDP</h5>
+                                <p class="card-text">3.250.000 <u>đ</u></p>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- login modal -->
+    <div class="modal fade mt-5" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ĐĂNG NHẬP BẰNG TÀI KHOẢN K-BLANC</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-danger">Do một số lí do nên hiện tại bạn chưa thể dùng các phương thức đăng nhập khác!</p>
+                    <form>
+                        <div class="form-group">
+                            <label>Địa chỉ Email:</label>
+                            <input type="email" class="form-control" id="logEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label>Mật khẩu:</label>
+                            <input type="password" class="form-control" id="logPassword" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label mb-3" for="checkLog">Lưu đăng nhập</label>
+                        </div>
+                        <span id="errLoginUser" class="mb-5">(*)</span>
+                        <button type="submit" class="btn btn-primary" style="width: 17rem;" id="userLogin">Đăng nhập</button>
+                    </form>
+                    <p class="m-5">Bạn chưa có tài khoản? hãy chọn 
+                        <button type="submit" class="btn btn-warning" id="userSignUp" data-toggle="modal" data-target="#sign-up">Đăng kí</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ĐĂNG KÍ TÀI KHOẢN K-BLANC</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-danger">Do một số lí do nên hiện tại bạn chưa thể dùng các phương thức đăng kí khác!</p>
+                    <form>
+                        <div class="form-group">
+                            <label>Địa chỉ Email:</label>
+                            <input type="email" class="form-control" id="txtEmailSignUp" aria-describedby="emailHelp" placeholder="Enter email">
+                            <span id="errEmailSignUp">(*)</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Mật khẩu:</label>
+                            <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+                            <span id="errPassword">(*)</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Xác nhận lại mật khẩu:</label>
+                            <input type="password" class="form-control" id="InputPassword2" placeholder="Password">
+                            <span id="errConfimPassword">(*)</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 17rem;" id="setUser">Đăng kí</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="formInfor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">THÔNG TIN NGƯỜI DÙNG</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="/public/img/img-update.jpg" alt="your image update" width="100px" height="100px" class="rounded mx-auto d-block">
+                    <h3>Tên đăng nhập:</h3>
+                    <span id="infoEmail" class="font-20 ml-2">admin@gmail.com</span> <br>
+                    <button type="button" class="btn btn-light btn-outline-success m-2" data-toggle="modal" data-target="#formAddress" id="address">
+                        Cập nhật địa chỉ giao hàng
+                    </button>
+                    <p class="font-30 text-success" id="newAlert"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade mt-5" id="formAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">CẬP NHẬT ĐỊA CHỈ GIAO HÀNG</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="updateAddress" required>
+                    <button type="button" class="btn btn-light btn-outline-success m-2" data-toggle="modal" data-target="#formAddress" id="update">
+                        Cập nhật
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/scrollTopButton.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>
