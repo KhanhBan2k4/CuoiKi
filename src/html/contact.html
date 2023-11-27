@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/bootstrap/bootstrap.min.css">
+    <script src="/public/jquery/jquery.min.js"></script>
+    <script src="/public/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/public/fa-icon/css/all.min.css">
+    <script src="/public/fa-icon/js/all.min.js"></script>
+    <title>K BLANC - Liên hệ</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black ps-sticky">
+            <a class="navbar-brand" href="#">
+                <img src="/public/img/logo.png" width="50px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html">TRANG CHỦ<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/review.html">REVIEWS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SẢN PHẨM
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#sanPhamNoiBat">Sản phẩm nổi bật</a>
+                            <a class="dropdown-item" href="#designer-nam">Nước hoa nam</a>
+                            <a class="dropdown-item" href="#designer-nu">Nước hoa nữ</a>
+                            <a class="dropdown-item" href="#">Nước hoa mini</a>
+                            <a class="dropdown-item" href="#">Nước hoa tester</a>
+                            <a class="dropdown-item" href="#">Mỹ phẩm</a>
+                            <a class="dropdown-item" href="#">Son</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/profile.html">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/contact.html">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 mr-3" type="submit">Search</button>
+                    <button type="button" class="btn btn-light btn-outline-success m-2" data-toggle="modal" data-target="#login">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                    <button type="button" class="btn btn-light btn-outline-success">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section class="mb-4">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">LIÊN HỆ</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Bạn có câu hỏi và muốn được giải đáp? Hãy liên hệ với chúng tôi bằng cách điền vào form bên dưới!</p>
+            <div class="row">
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Họ và tên</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Địa chỉ email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="subject">Nghề nghiệp</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="form-group">
+                                    <label for="message">Câu hỏi</label>
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" style="width: 100%;">Gửi</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>IUH Đại học Công Nghiệp TpHCM</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+84x xxxx xxxx</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>contact@kblanc.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
